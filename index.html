@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOXICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>فرم ورود / ثبت نام</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- FORM HEADER -->
+      <div class="form-header">
+        <div class="titles">
+          <div class="title-login">ورود</div>
+          <div class="title-register">ثبت نام</div>
+        </div>
+      </div>
+
+      <!-- LOGIN FORM -->
+      <form class="login-form" action="#" autocomplete="off">
+        <div class="input-box">
+          <input class="input-field" id="log-email" type="text" required />
+          <label class="label" for="log-email">ایمیل</label>
+          <i class="bx bx-envelope icon"></i>
+        </div>
+
+        <div class="input-box">
+          <input class="input-field" id="log-pass" type="password" required />
+          <label class="label" for="log-pass">رمز عبور</label>
+          <i class="bx bx-lock-alt icon"></i>
+        </div>
+
+        <div class="form-cols">
+          <div class="col-1"></div>
+          <div class="col-2">
+            <a href="#">فراموشی رمز عبور</a>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn-submit" id="SignInBtn">
+            ورود <i class="bx bx-log-in"></i>
+          </button>
+        </div>
+
+        <div class="switch-form">
+          <span>هنوز حساب کاربری ندارید؟ <a href="#" onclick="registerFunction()">ثبت نام</a></span>
+        </div>
+      </form>
+
+      <!-- REGISTER FORM -->
+      <form class="register-form" action="#" autocomplete="off">
+        <div class="input-box">
+          <input class="input-field" id="reg-name" type="text" required />
+          <label class="label" for="reg-name">نام کاربری</label>
+          <i class="bx bx-user icon"></i>
+        </div>
+
+        <div class="input-box">
+          <input class="input-field" id="reg-email" type="text" required />
+          <label class="label" for="reg-email">ایمیل</label>
+          <i class="bx bx-envelope icon"></i>
+        </div>
+
+        <div class="input-box">
+          <input class="input-field" id="reg-pass" type="password" required />
+          <label class="label" for="reg-pass">رمز عبور</label>
+          <i class="bx bx-lock-alt icon"></i>
+        </div>
+
+        <div class="form-cols">
+          <div class="col-1">
+            <input type="checkbox" id="agree" />
+            <label for="agree">قبول قوانین و مقررات</label>
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <div class="input-box">
+          <button type="button" class="btn-submit" id="SignUpBtn">
+            ثبت نام <i class="bx bx-log-out"></i>
+          </button>
+        </div>
+
+        <div class="switch-form">
+          <span>قبلاً حساب کاربری دارید؟ <a href="#" onclick="loginFunction()">وارد شوید</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
